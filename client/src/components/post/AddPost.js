@@ -60,7 +60,6 @@ const AddPost = () => {
     }
   };
 
-  console.log(newPost);
   return (
     <>
       <div className="write">

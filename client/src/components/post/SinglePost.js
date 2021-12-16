@@ -5,14 +5,13 @@ import ActionBtn from './ActionBtn';
 import { AuthContext } from '../../contexts/AuthContext';
 const SinglePost = ({ post }) => {
   const [postState, setPostState] = useState([]);
-  const PF = 'http://localhost:5000/images/';
+  const PF = 'https://chungblogapp.herokuapp.com/images/';
 
   const {
     authState: {
       user: { username },
     },
   } = useContext(AuthContext);
-  console.log(post);
   let body;
   if (username === post.user.username) {
     body = (

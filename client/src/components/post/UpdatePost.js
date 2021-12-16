@@ -10,7 +10,7 @@ import Alert from '../layouts/Alert';
 import { apiUrl } from '../../contexts/constant';
 const UpdatePost = () => {
   const { updatePost } = useContext(PostContext);
-  const PF = 'http://localhost:5000/images/';
+  const PF = 'https://chungblogapp.herokuapp.com/images/';
   const [file, setFile] = useState(null);
   const location = useLocation();
   const post = location.state.postState;

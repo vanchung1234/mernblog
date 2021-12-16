@@ -11,7 +11,7 @@ const UpdateUserForm = () => {
     updateUser,
   } = useContext(AuthContext);
   console.log(user);
-  const PF = 'http://localhost:5000/images/';
+  const PF = 'https://chungblogapp.herokuapp.com/images/';
   const [file, setFile] = useState(null);
 
   const [updatedUser, setUpdateUser] = useState(user);
