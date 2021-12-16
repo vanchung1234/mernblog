@@ -2,7 +2,6 @@ import React from 'react';
 import { useContext } from 'react';
 import { AuthContext } from '../../contexts/AuthContext';
 import { Navigate } from 'react-router-dom';
-import Header from '../layouts/Header';
 import Navbar from '../layouts/Navbar';
 const ProtectedRoute = ({ children }) => {
   const {

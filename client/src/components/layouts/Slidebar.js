@@ -30,6 +30,7 @@ export default function Sidebar() {
             <Link
               to={`/?categories=${c.name}`}
               className="link"
+              key={c._id}
             >
               <li className="sidebarListItem">{c.name}</li>
             </Link>
