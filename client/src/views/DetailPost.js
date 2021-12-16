@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import Moment from 'react-moment';
-const PF = 'http://localhost:5000/images/';
+const PF = 'https://chungblogapp.herokuapp.com/images/';
 
 const DetailPost = () => {
   const location = useLocation();
