@@ -9,8 +9,10 @@ const categoryRoute = require('./routes/categories');
 const userRouter = require('./routes/user');
 const multer = require('multer');
 const path = require('path');
-const cors = require('cors')
 
+var cors = require('cors')
+
+app.use(cors()) // Use this after the variable declaration
 const connectDB = async () => {
     try {
         await mongoose.connect(
@@ -29,7 +31,6 @@ const connectDB = async () => {
 
 connectDB();
 
-app.use(cors())
 app.use(express.json());
 app.use(
     '/images',

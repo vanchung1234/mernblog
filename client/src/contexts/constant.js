@@ -1,7 +1,7 @@
 export const apiUrl =
   process.env.NODE_ENV !== 'production'
     ? 'https://chungblogapp.herokuapp.com/api'
-    : 'https://chungblogapp.herokuapp.com/api';
+    : 'vovan';
 export const LOCAL_STORAGE_TOKEN_NAME = 'chung';
 
 export const POSTS_LOADED_SUCCESS = 'POSTS_LOADED_SUCCESS';
